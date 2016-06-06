@@ -1,16 +1,9 @@
-# set working directory (change this to fit your needs)
-setwd('/Users/Raj/Coursera/4-ExploratoryAnalysis/Week1Assignment')
-
-# make sure the plots folder exists
-if (!file.exists('plots')) {
-  dir.create('plots')
-}
 
 # load data
-source('/Users/Raj/Coursera/4-ExploratoryAnalysis/Week1Assignment/Prepare_data.R')
+source('prepare_data.R')
 
 # open device
-png(filename='plots/plot4.png',width=480,height=480,units='px')
+png(filename='plot4.png',width=480,height=480,units='px')
 
 # make 4 plots
 par(mfrow=c(2,2))
